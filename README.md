@@ -4,7 +4,7 @@ Lines of Action is a board game invented by Claude Soucie. It is played on a che
 
 The game ends when one side's pieces are contiguous: that is, there is a path connecting any two pieces of that side's color by a sequence of steps to adjacent squares (horizontally, vertically, or diagonally), each of which contains a piece of same color. Hence, when a side is reduced to a single piece, all of its pieces are contiguous. If a move causes both sides' pieces to be contiguous, the winner is the side that made that move. One can have infinite games, where players just repeat positions indefinitely. We will prevent this with a move-limit rule: if the current move limit is L moves (the default is 60), then after the two sides both make L moves combined, the game ends in a tie. Our testing will always include time limits; somebody will eventually lose if two players repeat positions many times. Figure 2a shows a final position. Figure 2b shows a board just before a move that will give both sides contiguous pieces. Since the move is White's, White wins this game.
 
-#### for more information and to see examples, please visit [here] [https://inst.eecs.berkeley.edu/~cs61b/sp20/materials/proj/proj2/index.html]
+#### for more information and to see examples, please visit [here] (https://inst.eecs.berkeley.edu/~cs61b/sp20/materials/proj/proj2/index.html)
 
 
 CONTENTS:
