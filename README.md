@@ -1,21 +1,14 @@
-This directory contains a skeleton for CS61B Project 2.
+# LOA - Lines of Action - CS61B Project 2
 
-Although some of what's in here might seem mysterious to you, try to 
-understand what it's all for.  Don't be afraid to ask us about it.
-The skeleton files are YOURS TO CHANGE AS YOU DESIRE OR THROW AWAY
-ENTIRELY!!!
+Lines of Action is a board game invented by Claude Soucie. It is played on a checkerboard with ordinary checkers pieces. The two players take turns, each moving a piece, and possibly capturing an opposing piece. The goal of the game is to get all of one’s pieces into one group of pieces that are connected. Two pieces are connected if they are adjacent horizontally, vertically, or diagonally. Initially, the pieces are arranged as shown in Figure 1. Play alternates between Black and White, with Black moving first. Each move consists of moving a piece of your color horizontally, vertically, or diagonally onto an empty square or onto a square occupied by an opposing piece, which is then removed from the board. A piece may jump over friendly pieces (without disturbing them), but may not cross enemy pieces, except one that it captures. A piece must move a number of squares that is exactly equal to the total number of pieces (black and white) on the line along which it chooses to move (the line of action). This line contains both the squares behind and in front of the piece that moves, as well as the square the piece is on. A piece may not move off the board, onto another piece of its color, or over an opposing piece.
+
+The game ends when one side's pieces are contiguous: that is, there is a path connecting any two pieces of that side's color by a sequence of steps to adjacent squares (horizontally, vertically, or diagonally), each of which contains a piece of same color. Hence, when a side is reduced to a single piece, all of its pieces are contiguous. If a move causes both sides' pieces to be contiguous, the winner is the side that made that move. One can have infinite games, where players just repeat positions indefinitely. We will prevent this with a move-limit rule: if the current move limit is L moves (the default is 60), then after the two sides both make L moves combined, the game ends in a tie. Our testing will always include time limits; somebody will eventually lose if two players repeat positions many times. Figure 2a shows a final position. Figure 2b shows a board just before a move that will give both sides contiguous pieces. Since the move is White's, White wins this game.
+
+#### for more information and to see examples, please visit [here] [https://inst.eecs.berkeley.edu/~cs61b/sp20/materials/proj/proj2/index.html]
+
 
 CONTENTS:
 
-ReadMe			This file.
-	
-Makefile		A makefile that will compile your
-			files and run tests.  You must turn in a Makefile,
-			'make' must compile all your files, and 
-			'make check' must perform all your tests.  
-			Currently, this makefile is set up to do just 
-			that with our skeleton files.  Be sure to keep 
-			it up to date.
 
 loa/			Directory containing the Lines of Action package.
 
@@ -63,8 +56,6 @@ loa/			Directory containing the Lines of Action package.
 
     HelpText.txt        Contains a brief description of the commands (intended
                         for printing when help requested).
-
-The following are relevant to the extra-credit portion:
 
     GUI.java            A class that represents a graphical user interface
                         (GUI) for the Loa game.
